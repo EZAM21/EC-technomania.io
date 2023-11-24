@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header Design */
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgb(25,24,36);
+    background: linear-gradient(90deg, rgba(25,24,36,1) 95%, rgba(15,15,15,1) 100%, rgba(0,212,255,1) 100%);
+    /* border-bottom: 1px solid #ccc;
+    box-shadow: 0 0px 2px .5px rgba(0, 0, 0, 0.304); */
+    height: 70px;
+}
+
+header h1{
+    font-family: 'Monda';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #fff; 
+}
+
+/* header span.orange{
+    background-color: #FBBC6A;
+    color: #131A22;
+    padding: 0 15px;
+    border-radius: 8px;
+} */
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a{
+    font-family: 'Monda';
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    background-color: #FBBC6A;
+    transition: 0.5s;
+}
+
+#header_burger{
+    display: none;
+}
+#header_burger svg{
+    stroke: #fff;
+    width: 22px;
+    height: 22px;
+
+
+}
+/* End of Header Design */
+
+
+/* Main Design*/
+    main{
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+        gap: 10px
+    }
+
+    section .title {
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Monda;
+        font-size: 1.1rem;
+        color: #131A22;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    main .card{
+        width: 24%;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 1s;
+        /* border: solid 1px #E5E5E5;
+        border-radius: 8px; */
+        
+
+    }
+
+    main .card .box_image{
+        position: relative;
+        /* border: solid 1px #E5E5E5; */
+    }
+
+    main .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+
+/* Icon */
+main .card .box_image .icones{
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    /* font-family: "Monserrat"; */
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    /* background-color: #131A22; */
+    /* background: rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+    border-radius: 8px;
+    padding: 0;
+    
+}
+
+.fa-heart, .fa-comment-dots{
+    margin: 5px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+main .infos {
+    width: 100%;
+    border: solid 1px #E5E5E5;
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+    text-align: center;
+    margin-bottom: 15px;
+    /* height: 165px; */
+    /* border: solid 1px red; */
+    float:left;
+    box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.5);
+}
+
+.container_title{
+    width: 100%;
+}
+
+.container_title h2{
+    /* font-family: 'montserrat'; */
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    height: 40px;
+}
+
+h2 {
+    font-family: "Monda";
+}
+
+
+
+main .card h2{
+    /* font-family: 'montserrat'; */
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    text-align: center;
+    height: 60px;
+    width: auto;
+}
+
+main .card h3{
+    font-family: 'Monda';
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    /* height: 50px; */
+}
+
+span.barre {
+    color: red;
+    text-decoration: line-through;
+    padding: 1px;
+}
+
+.star{
+    padding: 1px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    color: #FBBC6A;
+    height: 40px;
+}
+
+.star i {
+    margin-right: -4px;
+}
+
+/* Les étoiles */
+/* .star .fa-solid{
+} */
+
+.star span,p {
+    color: #131A22;
+    padding: 5px;
+    font-family: "montserrat";
+}
+
+
+/* End of css main */
+
+
+/* Footer Design */
+footer{
+    padding: 20px;
+    background-color: #131A22;
+    font-family: "Monda";
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+footer ul li a{
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+footer ul li a span.orange{
+    /* background-color: #FBBC6A; */
+    color: #fff;
+    padding: 0;
+    /* border-radius: 10px; */
+}
+
+@media screen and (max-width: 960px) {
+    header nav ul {
+        display: none;
+    }
+
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+    main .card {
+        width: 30%;
+    }
+
+    .infos {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header{
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    #header_burger{
+        display: block;
+        cursor: pointer;
+    }
+    
+    main {
+        margin-bottom: 20px;
+    }
+
+    .infos {
+        margin-bottom: 10px;
+        font-size: .8rem;
+    }
+
+    footer ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+    
+    footer ul li a{
+        width: 300px;
+        text-align: center;
+    }
+    
+}
+/* End of footer design */
+
+/* Media Query for the little screens (min-width: 620px) and (max-width: 430px)*/
+@media screen and (max-width: 620px) {
+    main .card {
+        width: 45%;
+    }
+
+    .infos {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Media Query for the little screens (max-width: 410px)*/
+@media screen and (max-width: 410px) {
+    header {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    header span.orange {
+        padding: 10px;
+    }
+
+    header h1 a {
+        font-size: medium;
+    }
+
+    section .title {
+        font-size: .8rem;
+        margin-bottom: 10px;
+    }
+
+    
+    main {
+        display: grid;
+        gap: 5px 5px;
+        /* row-gap: 5px 5px; */
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 10px;
+    }
+    
+    main .card {
+        min-width: 180px;
+        font-size: .8rem;
+        /* margin-bottom: 0; */
+    }
+    
+    main .card h2{
+        font-size: .9rem;
+    }
+
+    main .card h3 {
+        font-size: .8rem;
+    }
+    
+    main .card .box_image .icones{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        font-weight: bold;
+        color: #fff;
+        background: rgba(0,0,0,0.5);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+    .fa-heart, .fa-comment-dots{
+        margin: 10px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .infos {
+        font-size: .75rem;
+    }
+    
+    footer {
+        font-size: medium;
+    }
+}
